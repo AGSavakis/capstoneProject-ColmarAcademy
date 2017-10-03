@@ -1,39 +1,273 @@
 body {
-  font-size: 16px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  padding: 0 auto;
-}
+    font-size: 16px;
+    background-color: #ffffff;
+    width: 1024px;
+    margin: 0 auto;
+  }
 
-li {
-  list-style: none;
-  text-decoration: none;
-}
+  h1 {
+    font-size: 2rem;
+  }
 
-.maincontainer {
-  width: 960px;
-  margin: 0;
-  padding: 0;
-}
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
 
 header {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-
-header .logo {
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-header .desktop ul {
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 64px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+  }
+
+  header .navbar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 0 24px;
+  }
+
+  header .logo {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header .desktop ul {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  header .desktop li {
+      padding-left: 16px;
+      list-style: none;
+      text-decoration: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding: 0 20px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .mobile ul {
+      display: flex;
+      justify-content: center;
+      height: 64px;
+      list-style: none;
+  }
+
+  .mobile li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+/* Begin Banner styling */
+
+.banner {
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner img {
+    padding: 32px 24px;
+    width: 60%;
+  }
+
+  .banner .bigPostText {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+/* Begin Information styling */
+
+.information {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+
+  .information .infoLeftSide {
+      width: 74%;
+      display: flex;
+      align-content: flex-start;
+      flex-direction: column;
+      padding: 32px 24px;
+    }
+
+  .information .infoLeftImage img {
+      width: 100%;
+    }
+
+  .information .infoLeftPost .infoRight {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 32px 24px;
+    }
+
+  .infoRight {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 40%;
+      padding: 32px 16px;
+    }
+
+  .infoRightPost {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+    }
+
+  .infoRightPost img {
+      width: 35%;
+    }
+
+  .infoRightText {
+      margin: 0 20px;
+  }
+
+/* Begin Card styling */
+
+.course {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 32px 72px;
+    background-color: gray;
+  }
+
+  .course h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .courseCards {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 16px 0;
+  }
+
+  .card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 32%;
+    margin-bottom: 16px;
+    background-color: white;
+  }
+
+  .card .cardImage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .card .cardImage img {
+    width: 100%;
+  }
+
+  .card .cardText {
+    padding: 16px 16px 24px 16px;
+    background-color: white;
+  }
+
+/* Thesis Section */
+
+.thesis {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 32px 24px;
+    background-color: white;
+  }
+
+  .thesis h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .thesisColumns {
+    display: flex;
+    align-content: space-between;
+  }
+
+  .thesis .thesisLeft {
+      width: 60%;
+      display: flex;
+      align-content: flex-start;
+      flex-direction: column;
+    }
+
+  .thesis .thesisLeft .thesisVideo video {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+  .thesis .thesisLeftPost .thesisRight {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 32px 24px;
+    }
+
+  .thesisRight {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 40%;
+    }
+
+  .infoRightPost {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 24px;
+      margin-left: 24px;
+    }
+
+  .thesisRightPost img {
+      width: 35%;
+    }
+
+  .thesisRightText {
+      margin: 0 24px;
   }
 
 /* Begin Footer styling */
@@ -42,6 +276,8 @@ footer {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    padding: 16px 24px;
+    border-top: 1px solid gray;
   }
 
   footer .copyright {
@@ -66,14 +302,29 @@ footer {
 
 @media only screen and (max-width: 450px) {
 
-  .desktop {
+  header {
     display: none;
   }
 
   .mobile {
     display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 44%;
   }
+
+  .mobile ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+  }
+
+  .mobile li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
 }

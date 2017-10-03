@@ -14,14 +14,12 @@
 
 <body>
 
-<!-- Main Container -->
-    <div class="maincontainer">
-
       <!-- Start Header and Navigation -->
         <header>
-          <div class="logo">
-            <a href="index.html" class="logo"><img src="resources/images/ic-logo.svg" />COLMARACADEMY</a>
-          </div>
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html" class="logo"><img src="resources/images/ic-logo.svg" />COLMARACADEMY</a>
+            </div>
 
       <!-- Start Desktop Navigation -->
           <nav class="desktop">
@@ -30,55 +28,59 @@
               <li><a href="#">Online</a></li>
               <li><a href="#">For companies</a></li>
               <li><a href="#">Sign in</a></li>
-            <ul>
+            </ul>
             </nav>
       <!-- End Desktop Navigation -->
-
-      <!-- Start Mobile Navigation -->
-          <nav class="mobile">
-            <ul>
-              <li><a href="#"><img src="resources/images/ic-logo.svg" /></a></li>
-              <li><a href="#"><img src="resources/images/ic-on-campus.svg" /></a></li>
-              <li><a href="#"><img src="resources/images/ic-online.svg" /></a></li>
-              <li><a href="#"><img src="resources/images/ic-login.svg" /></a></li>
-            <ul>
-          </nav>
-      <!-- End Mobile Navigation -->
-
+          </div>
       </header>
   <!-- End Header and Navigation -->
 
-  <!-- Start Banner -->
+
+  <!-- Start Mobile Navigation -->
+      <nav class="mobile">
+        <ul>
+          <li><a href="#"><img src="resources/images/ic-logo.svg" /></a></li>
+          <li><a href="#"><img src="resources/images/ic-on-campus.svg" /></a></li>
+          <li><a href="#"><img src="resources/images/ic-online.svg" /></a></li>
+          <li><a href="#"><img src="resources/images/ic-login.svg" /></a></li>
+        </ul>
+      </nav>
+  <!-- End Mobile Navigation -->
+
+
+  <!-- Start Top Banner -->
     <div class="banner">
-      <div class="bigPost">
+
+      <!-- Start Banner Post -->
         <img src="resources/images/banner.jpg" />
-        <div>
-          <p>Learn something new everyday</p>
+        <div class="bigPostText">
+          <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="startButton">Start Here</p>
+          <h3 class="startButton">Start Here</h3>
         </div>
-      </div>
-  <!-- End Banner -->
+    </div>
+  <!-- End Top Banner -->
 
   <!-- Start Information Posts -->
-      <div class="information">
+    <div class="information">
 
       <!--Left side Info Post -->
-        <div class="infoLeftPost">
-          <img src="resources/images/information-main.jpg" />
-          <div>
+        <div class="infoLeftSide">
+          <div class="infoLeftImage">
+            <img src="resources/images/information-main.jpg" />
             <h2>It doesn't hurt to keep practicing</h2>
             <p>&ldquo;Donec porttitor enim diam, at tincidunt sapien dapibus non. Integer placerat sed eros eu efficitur. Maecenas turpis libero, ornare nec nibh id, aliquet ullamcorper mauris.&rdquo;</p>
             <p class="caption">Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
-        <!-- End Left side Info Post -->
+      <!-- End Left side Info Post -->
 
-        <!-- Right side Info Posts -->
+      <!-- Right side Info Posts -->
         <div class="infoRight">
+
           <div class="infoRightPost">
             <img src="resources/images/information-orientation.jpg" />
-            <div>
+            <div class="infoRightText">
               <h2>Orientation date</h2>
               <p>Tue 10&#47;11 &#38; Wed 10&#47;12&#58;	8am&#150;3pm</p>
               <p>Read More</p>
@@ -87,7 +89,7 @@
 
           <div class="infoRightPost">
             <img src="resources/images/information-campus.jpg" />
-            <div>
+            <div class="infoRightText">
               <h2>Our campus</h2>
               <p>Find which campus is close by you</p>
               <p>Read More</p>
@@ -96,20 +98,18 @@
 
           <div class="infoRightPost">
             <img src="resources/images/information-guest-lecture.jpg" />
-            <div>
+            <div class="infoRightText">
               <h2>Our guest lecture</h2>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <p>Read More</p>
             </div>
           </div>
 
+      <!-- End Right side info posts -->
         </div>
 
-        <!-- End Right side info posts -->
-      </div>
-
     <!-- End Information Posts -->
-    </div>
+      </div>
 
 
     <!-- Start Course section -->
@@ -120,72 +120,74 @@
         <!-- Begin Course card section -->
         <div class="courseCards">
 
-          <!-- Begin card layout section -->
-          <div class="card">
-              <div class="cardImage">
-                <img src="resources/images/course-software.jpg" />
-              <div>
-                <h2>Software Engineering</h2>
-                <p>COURSES</p>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
-              </div>
-            </div>
+        <!-- Begin card layout section -->
+        <div class="card">
+          <div class="cardImage">
+            <img src="resources/images/course-software.jpg" />
           </div>
+            <div class="cardText">
+              <h2>Software Engineering</h2>
+              <h3>COURSES</h3>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+        </div>
+
 
           <div class="card">
               <div class="cardImage">
                 <img src="resources/images/course-computer-art.jpg" />
-              <div>
+              </div>
+              <div class="cardText">
                 <h2>Computer Art</h2>
-                <p>COURSES</p>
+                <h3>COURSES</h3>
                 <p>Imaging &#38; Design, Web Design, Motion Graphics &#38; Visual Effects, Computer Animation</p>
               </div>
-            </div>
           </div>
 
           <div class="card">
               <div class="cardImage">
                 <img src="resources/images/course-design.jpg" />
-              <div>
+              </div>
+              <div class="cardText">
                 <h2>Design</h2>
-                <p>COURSES</p>
+                <h3>COURSES</h3>
                 <p>User Experience Design, User Research, Visual Design</p>
               </div>
-            </div>
           </div>
 
           <div class="card">
               <div class="cardImage">
                 <img src="resources/images/course-data.jpg" />
-              <div>
+              </div>
+              <div class="cardText">
                 <h2>Data</h2>
-                <p>COURSES</p>
+                <h3>COURSES</h3>
                 <p>Data Science, Big Data, SQL, Data Visualization</p>
               </div>
-            </div>
           </div>
 
           <div class="card">
               <div class="cardImage">
                 <img src="resources/images/course-business.jpg" />
-              <div>
+              </div>
+              <div class="cardText">
                 <h2>Business</h2>
-                <p>COURSES</p>
+                <h3>COURSES</h3>
                 <p>Product Development, Business Development, Startup</p>
               </div>
-            </div>
           </div>
 
           <div class="card">
               <div class="cardImage">
                 <img src="resources/images/course-marketing.jpg" />
-              <div>
+              </div>
+              <div class="cardText">
                 <h2>Marketing</h2>
-                <p>COURSES</p>
+                <h3>COURSES</h3>
                 <p>Analytics, Content Marketing, Mobile Marketing</p>
               </div>
-            </div>
           </div>
+        </div>
           <!-- End Cards section -->
 
       </div>
@@ -199,60 +201,57 @@
         <h1>Thesis Exhibit</h1>
 
       <!-- Start Thesis Posts section-->
-          <div class="thesisPosts">
+      <div class="thesisColumns">
 
           <!--Left side Thesis Post -->
-            <div class="thesisLeftPost">
-              <video src="resources/videos/thesis.mp4" />
-              <div>
-                <h2>Reimagine Urban</h2>
-                <p>&ldquo;Curabitur malesuada consequat ultricies. Nam tempor sapien quis pellentesque luctus. In hac habitasse platea dictumst.&rdquo;</p>
-              </div>
+          <div class="thesisLeft">
+            <div class="thesisVideo">
+              <video src="resources/videos/thesis.mp4"></video>
             </div>
+            <div>
+              <h2>Reimagine Urban</h2>
+              <p>&ldquo;Curabitur malesuada consequat ultricies. Nam tempor sapien quispellentesque luctus. In hac habitasse platea dictumst.&rdquo;</p>
+            </div>
+          </div>
             <!-- End Left side Thesis Post -->
 
             <!-- Right side Thesis Posts -->
-            <div class="thesisRight">
+          <div class="thesisRight">
 
-              <div class="infoRightPost">
-                <img src="resources/images/thesis-fisma.jpg" />
-                <div>
-                  <h2>Fisma&#58; Design And Prototype</h2>
-                  <p>Designer showcase of new prototype product</p>
-                </div>
+            <div class="infoRightPost">
+              <img src="resources/images/thesis-fisma.jpg" />
+              <div  class="thesisRightText">
+                <h2>Fisma&#58; Design And Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
               </div>
-
-              <div class="thesisRightPost">
-                <img src="resources/images/thesis-now-and-then.jpg" />
-                <div>
-                  <h2>Now And Then</h2>
-                  <p>Research study about New York</p>
-                </div>
-              </div>
-              <!-- End Right side Thesis Posts -->
-
             </div>
+
+            <div class="infoRightPost">
+              <img src="resources/images/thesis-now-and-then.jpg" />
+              <div  class="thesisRightText">
+                <h2>Now And Then</h2>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+
+              <!-- End Right side Thesis Posts -->
+            </div>
+
           <!-- End Thesis Post -->
+        </div>
 
-          </div>
         <!-- End Thesis -->
-
-
-      <!-- Start Footer -->
-      <footer>
-        <div class="copyright">&#169;	2016 Colmar Academy. All rights reserved.</div>
-        <ul>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </ul>
-      </footer>
-
-
-
-      <!-- End Footer -->
-
-
     </div>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="copyright">&#169;	2016 Colmar Academy. All rights reserved.</div>
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </footer>
+    <!-- End Footer -->
  <!-- End maincontainer div -->
 
 </body>
