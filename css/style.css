@@ -2,9 +2,8 @@ body {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 16px;
     background-color: #ffffff;
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid black;
   }
 
   h1 {
@@ -34,11 +33,16 @@ body {
     text-decoration: none;
   }
 
+  a {
+    color: #6495ED;
+    text-decoration: none;
+  }
+
 header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 1024px;
+    width: 100%;
     height: 64px;
     position: fixed;
     z-index: 1;
@@ -61,9 +65,9 @@ header {
     font-size: 1.2rem;
   }
 
-  header .logo img {
+  /* header .logo img {
     width: 100%;
-  }
+  } */
 
   header .encodeSansBold {
     font-family: 'Encode Sans Expanded', sans-serif;
@@ -125,16 +129,15 @@ header {
   }
 
   .banner .bannerLeftImage {
-    width: 55%;
-  }
-
-  .bannerLeftImage img {
-      width: 99%;
+    width: 60%;
+    background-image: url("../resources/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 24px;
   }
 
   .banner .bigPostText {
     width: 40%;
-    padding-left: 24px;
   }
 
   .banner .bigPostText h1 {
@@ -166,7 +169,6 @@ header {
     background-color: #696969;
   }
 
-
   /* Begin Card styling */
 
 /* Begin Course Section styling */
@@ -176,7 +178,7 @@ header {
       justify-content: center;
       align-content: center;
       flex-direction: column;
-      padding: 32px 72px;
+      padding: 32px 56px 16px 56px;
       background-color: #D3D3D3;
     }
 
@@ -190,15 +192,14 @@ header {
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
-      padding: 16px 0;
     }
 
     .card {
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
-      width: 32%;
-      margin-bottom: 16px;
+      width: 29%;
+      margin: 16px;
       background-color: white;
     }
 
@@ -220,8 +221,8 @@ header {
 
     .card .cardText h2 {
         font-family: 'Encode Sans Expanded', sans-serif;
-        font-weight: 400;
-        font-size: 1.1rem;
+        font-weight: 600;
+        font-size: 1rem;
         color: #000000;
       }
 
@@ -237,6 +238,7 @@ header {
         font-family: 'Encode Sans Expanded', sans-serif;
         font-size: .8rem;
         line-height: 1.3;
+        color: #696A69;
       }
 
 /* Begin Information styling */
@@ -246,7 +248,6 @@ header {
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
-      margin-bottom: 32px;
     }
 
   .information .infoLeftSide {
@@ -258,7 +259,7 @@ header {
   }
 
   .information .infoLeftSide h2 {
-      margin: 31px 0 24px 0;
+      margin: 32px 0 24px 0;
       font-family: 'Encode Sans Expanded', sans-serif;
       font-weight: 700;
       font-size: 1.7rem;
@@ -277,6 +278,10 @@ header {
 
   .information .infoLeftImage img {
       width: 100%;
+    }
+
+  img.desktopImage2 {
+      display: none;
     }
 
   .information .infoLeftPost .infoRight {
@@ -299,7 +304,11 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    margin: 16px;
+    padding: 16px;
+  }
+
+  .infoRightPost:nth-child(3n+3) {
+    background: #D3D3D3;
   }
 
   .infoRightPost img {
@@ -341,14 +350,13 @@ header {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    padding: 32px 24px;
     background-color: white;
   }
 
   .thesis h1 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 32px;
+    margin: 32px;
   }
 
   .thesisColumns {
@@ -381,7 +389,8 @@ header {
       display: flex;
       align-content: flex-start;
       flex-direction: column;
-    }
+      margin: 0 24px;
+  }
 
   .thesis .thesisLeft .thesisVideo video {
       width: 100%;
@@ -397,7 +406,6 @@ header {
     }
 
   .thesisRight {
-      margin-left: 24px;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -410,6 +418,10 @@ header {
       justify-content: flex-start;
       align-items: center;
       flex-direction: row;
+    }
+
+  .thesisRightPost:nth-child(0n+1) {
+      background: #D3D3D3;
     }
 
   .thesisRightPost img {
@@ -425,6 +437,14 @@ header {
     font-weight: 600;
     font-size: 1.1rem;
     color: #000000;
+  }
+
+  .thesisLeftText h3 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000000;
+    margin-bottom: 10px;
   }
 
   .thesisRightText p {
@@ -482,24 +502,212 @@ footer {
   }
 
   .mobile {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
     height: 64px;
-    width: 44%;
-  }
-
-  .mobile ul {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 64px;
+    width: 100%;
   }
 
   .mobile li {
     display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    width: 100%;
   }
 
+  .banner {
+    width: 100%;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner .bannerLeftImage {
+    width: 100%;
+    background-image: url(../resources/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+ .banner img.bannerLeftImage {
+    margin: 0;
+  }
+
+  .banner .bigPostText {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .banner .bigPostText h1 {
+    width: 100%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .banner .bigPostText p {
+    width: 100%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: .7rem;
+  }
+
+  .banner .bigPostText h3 {
+    width: 91%;
+    padding: 16px;
+    margin: 24px 0px 24px 0px;
+  }
+
+  .information .infoLeftSide {
+    display: none;
+  }
+
+  .infoRight {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .information .infoRightPost {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .infoRightPost {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .infoRightPost:nth-child(0n+3) {
+      background-color: #ffffff;
+    }
+
+    .infoRightText {
+      width: 92%;
+      margin: 24px 16px;
+    }
+
+    img.desktopImage1 {
+      display: none;
+    }
+
+    img.desktopImage2 {
+      display: block;
+      width: 100%;
+    }
+
+    .course {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: white;
+      padding: 0;
+      margin: 32px 16px;
+    }
+
+    .course h1 {
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .card .cardImage .cardText {
+      display: none;
+    }
+
+    .card .cardImage img {
+      display: none;
+    }
+
+    .card.cardName {
+      margin: 0;
+    }
+
+    .card {
+      margin-bottom: 8px;
+    }
+
+    .card .cardText {
+      padding: 0px;
+    }
+
+    .card .cardText h3 {
+      display: none;
+    }
+
+    .card .cardText p {
+      display: none;
+    }
+
+    .cardName {
+        width: 100%;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .cardName h2 {
+      text-align: left;
+      padding: 16px 16px 24px 16px;
+      margin-bottom: 8px;
+      background-color: #D3D3D3;
+    }
+
+    .thesis {
+      width: 100%;
+    }
+
+    .thesis h1 {
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 16px;
+      margin:0;
+    }
+
+    .thesisColumns .thesisLeft {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        margin: 0 24px;
+        width: 100%;
+    }
+
+    .thesisLeftText {
+      display: none;
+    }
+
+    .thesisRight {
+      display: none;
+    }
+
+    footer .copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      font-size: .7rem;
+      color: #C0C0C0;
+    }
+
+    footer ul {
+      display: none;
+    }
 }
