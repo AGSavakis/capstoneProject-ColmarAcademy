@@ -1,5 +1,5 @@
 body {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     background-color: #ffffff;
     width: 100%;
@@ -7,24 +7,24 @@ body {
   }
 
   h1 {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 2rem;
   }
 
   h2 {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
   }
 
   h3 {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.25rem;
   }
 
   p {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
   }
 
@@ -142,7 +142,7 @@ header {
 
   .banner .bigPostText h1 {
       width: 94%;
-      font-family: 'Encode Sans Expanded', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 2rem;
       line-height: 1.1;
@@ -150,7 +150,7 @@ header {
 
   .banner .bigPostText p {
     width: 88%;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
     padding-top: .7rem;
@@ -220,22 +220,22 @@ header {
     }
 
     .card .cardText h2 {
-        font-family: 'Encode Sans Expanded', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: #000000;
       }
 
     .card .cardText h3 {
           margin-top: 10px;
-          font-family: 'Encode Sans Expanded', sans-serif;
+          font-family: 'Open Sans', sans-serif;
           font-size: .8rem;
           color: #696969;
         }
 
     .card .cardText p {
         margin-top: 8px;
-        font-family: 'Encode Sans Expanded', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: .8rem;
         line-height: 1.3;
         color: #696A69;
@@ -260,7 +260,7 @@ header {
 
   .information .infoLeftSide h2 {
       margin: 32px 0 24px 0;
-      font-family: 'Encode Sans Expanded', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 1.7rem;
   }
@@ -320,15 +320,15 @@ header {
   }
 
   .infoRightText h2 {
-      font-family: 'Encode Sans Expanded', sans-serif;
-      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
       font-size: 1.1rem;
       color: #000000;
     }
 
   .infoRightText p {
       margin-top: 8px;
-      font-family: 'Encode Sans Expanded', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: .8rem;
       line-height: 1.3;
     }
@@ -337,7 +337,7 @@ header {
 
   .textlink {
     margin-top: 8px;
-      font-family: 'Encode Sans Expanded', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: .8rem;
       line-height: 1.3;
       color: blue;
@@ -373,7 +373,7 @@ header {
 
   .thesis .thesisLeft h2 {
         margin-bottom: 24px;
-        font-family: 'Encode Sans Expanded', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 1.7rem;
     }
@@ -433,15 +433,15 @@ header {
   }
 
   .thesisRightText h2 {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 1.1rem;
     color: #000000;
   }
 
   .thesisLeftText h3 {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 1.25rem;
     color: #000000;
     margin-bottom: 10px;
@@ -449,7 +449,7 @@ header {
 
   .thesisRightText p {
     margin-top: 8px;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     line-height: 1.3;
   }
@@ -495,6 +495,55 @@ footer {
 
 /* Begin Mobile styling */
 
+/* Begin max-width: 850px */
+
+@media only screen and (max-width: 850px) {
+    .course {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        padding: 32px 0px 16px 0px;
+        background-color: #D3D3D3;
+    }
+
+    .card {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 29%;
+        margin: 8px;
+        background-color: white;
+    }
+}
+
+/* Begin max-width: 550px */
+
+@media only screen and (max-width: 550px) {
+
+    .banner .bigPostText h1 {
+        font-size: 1.85rem;
+    }
+
+    .information .infoLeftSide {
+        padding: 32px 12px;
+    }
+
+    .infoRightPost img {
+        display: none;
+    }
+
+    .card .cardText {
+        padding: 16px 4px 24px 4px;
+    }
+
+    .thesisRightPost img {
+        display: none;
+    }
+
+}
+
+/* Begin max-width: 450px */
 @media only screen and (max-width: 450px) {
 
   header {
@@ -545,7 +594,7 @@ footer {
 
   .banner .bigPostText h1 {
     width: 100%;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.1;
@@ -553,7 +602,7 @@ footer {
 
   .banner .bigPostText p {
     width: 100%;
-    font-family: 'Encode Sans Expanded', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
     padding-top: .7rem;
