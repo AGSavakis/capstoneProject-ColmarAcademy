@@ -2,18 +2,17 @@
 <html>
 <head>
   <title>Colmar Academy</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,600,700,800');
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./<favicon-name>.ico" type="image/x-icon">
 </head>
 
 <body>
 
-      <!-- Start Header and Navigation -->
-        <header>
+  <!-- Start Header and Navigation -->
+  <header>
           <div class="navbar">
             <div class="logo">
               <!-- a href="index.html" -->
@@ -30,222 +29,205 @@
               <li><a href="#">For companies</a></li>
               <li><a href="#">Sign in</a></li>
             </ul>
-            </nav>
+          </nav>
       <!-- End Desktop Navigation -->
           </div>
-      </header>
+  </header>
   <!-- End Header and Navigation -->
 
-
   <!-- Start Mobile Navigation -->
-      <nav class="mobile">
+  <nav class="mobile">
         <ul>
           <li><a href="#"><img src="resources/images/ic-logo.svg" /></a></li>
           <li><a href="#"><img src="resources/images/ic-on-campus.svg" /></a></li>
           <li><a href="#"><img src="resources/images/ic-online.svg" /></a></li>
           <li><a href="#"><img src="resources/images/ic-login.svg" /></a></li>
         </ul>
-      </nav>
+  </nav>
   <!-- End Mobile Navigation -->
 
 
+<!-- Start Main Container -->
+
   <!-- Start Top Banner -->
-    <div class="banner">
+  <section class="banner">
 
       <!-- Start Banner Post -->
       <img src="resources/images/banner.jpg" class="bannerLeftImage" />
-      <div class="bigPostText">
+      <article class="bigPostText">
           <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <a href="#"><h3 class="startButton">Start Here</h3></a>
-      </div>
-    </div>
+      </article>
+  </section>
   <!-- End Top Banner -->
 
   <!-- Start Information Posts -->
-    <div class="information">
+  <section class="information">
 
       <!--Left side Info Post -->
-        <div class="infoLeftSide">
-          <div class="infoLeftImage">
-            <img src="resources/images/information-main.jpg" />
-          </div>
-          <div class="infoLeftText">
+        <article class="infoLeftSide">
+          <img class="infoLeftImage" src="resources/images/information-main.jpg" />
             <h2>It doesn't hurt to keep practicing</h2>
             <p>&ldquo;Donec porttitor enim diam, at tincidunt sapien dapibus non. Integer placerat sed eros eu efficitur. Maecenas turpis libero, ornare nec nibh id, aliquet ullamcorper mauris.&rdquo;</p>
             <span class="quoteCite">Emanuel, Sr Strategist at Hiring.com</span>
-          </div>
-        </div>
+        </article>
       <!-- End Left side Info Post -->
 
       <!-- Right side Info Posts -->
-        <div class="infoRight">
+        <section class="infoRight">
 
-          <div class="infoRightPost">
+          <article class="infoRightPost">
           <!-- Image Swapping -->
             <img src="resources/images/information-orientation.jpg" class="desktopImage1"/>
             <img src="resources/images/information-orientation-mobile.jpg" class="desktopImage2"/>
             <!-- /div -->
-            <div class="infoRightText">
+            <figure class="infoRightText">
               <h2>Orientation date</h2>
               <p>Tue 10&#47;11 &#38; Wed 10&#47;12&#58;	8am&#150;3pm</p>
               <p class="textlink"><a href="#">Read More</a></p>
-            </div>
-          </div>
+            </figure>
+          </article>
 
 
-          <div class="infoRightPost">
+          <article class="infoRightPost">
           <!-- Image Swapping -->
             <img src="resources/images/information-campus.jpg" class="desktopImage1"/>
             <img src="resources/images/information-campus-mobile.jpg" class="desktopImage2"/>
             <!-- /div -->
-            <div class="infoRightText">
+            <figure class="infoRightText">
               <h2>Our campus</h2>
               <p>Find which campus is close by you</p>
               <p class="textlink"><a href="#">Read More</a></p>
-            </div>
-          </div>
+            </figure>
+          </article>
 
-          <div class="infoRightPost">
+          <article class="infoRightPost">
           <!-- Image Swapping -->
             <img src="resources/images/information-guest-lecture.jpg" class="desktopImage1"/>
             <img src="resources/images/information-guest-lecture-mobile.jpg" class="desktopImage2"/>
             <!-- /div -->
-            <div class="infoRightText">
+            <figure class="infoRightText">
               <h2>Our guest lecture</h2>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <p class="textlink"><a href="#">Read More</a></p>
-            </div>
-          </div>
+            </figure>
+          </article>
 
       <!-- End Right side info posts -->
-        </div>
+      </section>
 
-    <!-- End Information Posts -->
-      </div>
+  </section>
+  <!-- End Information Posts -->
 
-
-    <!-- Start Course section -->
-      <div class="course">
+  <!-- Start Course section -->
+  <section class="course">
         <!-- Title of card section -->
-          <h1>Start Learning</h1>
+        <h1>Start Learning</h1>
 
         <!-- Begin Course card section -->
         <div class="courseCards">
 
         <!-- Begin card layout section -->
-        <div class="card cardName">
-          <div class="cardImage">
-            <img src="resources/images/course-software.jpg" />
-          </div>
-            <div class="cardText">
+        <article class="card cardName">
+            <img class="cardImage" src="resources/images/course-software.jpg" />
+            <figure class="cardText">
               <h2>Software Engineering</h2>
               <h3>COURSES</h3>
               <p>Web Development, Mobile Development, iOT, APIs</p>
-            </div>
-        </div>
+            </figure>
+        </article>
 
-
-          <div class="card cardName">
-              <div class="cardImage">
-                <img src="resources/images/course-computer-art.jpg" />
-              </div>
-              <div class="cardText">
+          <article class="card cardName">
+              <img class="cardImage" src="resources/images/course-computer-art.jpg" />
+              <figure class="cardText">
                 <h2>Computer Art</h2>
                 <h3>COURSES</h3>
                 <p>Imaging &#38; Design, Web Design, Motion Graphics &#38; Visual Effects, Computer Animation</p>
-              </div>
-          </div>
+              </figure>
+          </article>
 
-          <div class="card cardName">
-              <div class="cardImage">
-                <img src="resources/images/course-design.jpg" />
-              </div>
-              <div class="cardText">
+          <article class="card cardName">
+              <img class="cardImage" src="resources/images/course-design.jpg" />
+              <figure class="cardText">
                 <h2>Design</h2>
                 <h3>COURSES</h3>
                 <p>User Experience Design, User Research, Visual Design</p>
-              </div>
-          </div>
+              </figure>
+          </article>
 
-          <div class="card cardName">
-              <div class="cardImage">
-                <img src="resources/images/course-data.jpg" />
-              </div>
-              <div class="cardText">
+          <article class="card cardName">
+              <img class="cardImage" src="resources/images/course-data.jpg" />
+              <figure class="cardText">
                 <h2>Data</h2>
                 <h3>COURSES</h3>
                 <p>Data Science, Big Data, SQL, Data Visualization</p>
-              </div>
-          </div>
+              </figure>
+          </article>
 
-          <div class="card cardName">
-              <div class="cardImage">
-                <img src="resources/images/course-business.jpg" />
-              </div>
-              <div class="cardText">
+          <article class="card cardName">
+              <img class="cardImage" src="resources/images/course-business.jpg" />
+              <figure class="cardText">
                 <h2>Business</h2>
                 <h3>COURSES</h3>
                 <p>Product Development, Business Development, Startup</p>
-              </div>
-          </div>
+              </figure>
+          </article>
 
-          <div class="card cardName">
-              <div class="cardImage">
-                <img src="resources/images/course-marketing.jpg" />
-              </div>
-              <div class="cardText">
+          <article class="card cardName">
+              <img class="cardImage" src="resources/images/course-marketing.jpg" />
+              <figure class="cardText">
                 <h2>Marketing</h2>
                 <h3>COURSES</h3>
                 <p>Analytics, Content Marketing, Mobile Marketing</p>
-              </div>
-          </div>
+              </figure>
+          </article>
         </div>
           <!-- End Cards section -->
 
-      </div>
+    </section>
     <!-- End Course Section -->
+  <!-- End Course -->
 
-
-    <!-- Start Thesis -->
-      <div class="thesis">
+  <!-- Start Thesis -->
+  <section class="thesis">
 
       <!-- Title of Thesis posts section -->
-        <h1>Thesis Exhibit</h1>
+      <h1>Thesis Exhibit</h1>
 
       <!-- Start Thesis Posts section-->
       <div class="thesisColumns">
 
           <!--Left side Thesis Post -->
-          <div class="thesisLeft">
-            <div class="thesisVideo">
-              <video src="resources/videos/thesis.mp4"></video>
-            </div>
-            <div class="thesisLeftText">
+          <article class="thesisLeft">
+            <video class="thesisVideo" width="100%" controls>
+              <source src="resources/videos/thesis.mp4" type="video/mp4">
+            </video>
+            <figure class="thesisLeftText">
               <h3>Reimagine Urban</h3>
               <p>&ldquo;Curabitur malesuada consequat ultricies. Nam tempor sapien quispellentesque luctus. In hac habitasse platea dictumst.&rdquo;</p>
-            </div>
-          </div>
+            </figure>
+          </article>
             <!-- End Left side Thesis Post -->
 
             <!-- Right side Thesis Posts -->
           <div class="thesisRight">
 
-            <div class="thesisRightPost">
+            <article class="thesisRightPost">
               <img src="resources/images/thesis-fisma.jpg" />
-              <div  class="thesisRightText">
+              <figure class="thesisRightText">
                 <h2>Fisma&#58; Design And Prototype</h2>
                 <p>Designer showcase of new prototype product</p>
-              </div>
-            </div>
+              </figure>
+            </article>
 
-            <div class="thesisRightPost">
+            <article class="thesisRightPost">
               <img src="resources/images/thesis-now-and-then.jpg" />
-              <div  class="thesisRightText">
+              <figure class="thesisRightText">
                 <h2>Now And Then</h2>
                 <p>Research study about New York</p>
-              </div>
-            </div>
+              </figure>
+            </article>
 
               <!-- End Right side Thesis Posts -->
             </div>
@@ -253,21 +235,20 @@
           <!-- End Thesis Post -->
         </div>
 
-        <!-- End Thesis -->
-    </div>
+    </section>
+  <!-- End Thesis -->
 
-    <!-- Start Footer -->
-    <footer>
-      <div class="copyright">
-        <p>&#169;2016 Colmar Academy. All rights reserved.</p>
-        <ul>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </ul>
-      </div>
-    </footer>
-    <!-- End Footer -->
- <!-- End maincontainer div -->
+  <!-- Start Footer -->
+  <footer>
+      <p>&#169;2016 Colmar Academy. All rights reserved.</p>
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+  </footer>
+  <!-- End Footer -->
 
+<!-- End Main Container -->
 </body>
+
 </html>
